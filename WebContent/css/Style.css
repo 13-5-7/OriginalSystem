@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/*各画面タイトル*/
+h1{
+	text-align: center;				/*テキスト中央寄せ*/
+}
+/*左上のHiring Systemデザイン*/
+h2{
+	display: flex;						/*直下の要素を並列にする*/
+	justify-content: space-between;		/*主軸の幅に対して余白をもって等間隔に配置*/
+	align-items: center;				/*flexboxアイテムのクロス軸に沿って配置する位置を指定*/
+	min-width: 0;						/*これしないとpaddingがうまく効いてくれない*/
+	height: 60px;						/*高さ設定*/
+	padding: 0px 10px;					/*左右に空白を入れる*/
+	color: #4682B4;						/*文字色の設定*/
+}
+
+/*成功メッセージ*/
+div.comfirmMessege {
+	text-align: center;					/*文字を中央に設定*/
+	color: blue;						/*文字の色を設定*/
+	margin: 10px 0;						/*文字の上下に空白を設定*/
+}
+/*エラーメッセージ*/
+div.errorMessege{
+	text-align: center;					/*文字を中央に設定*/
+	color: red;							/*文字の色を設定*/
+	margin-top: 20px;					/*文字の上下に空白を設定*/
+	font-family: "arial black";			/*文字のフォント設定*/
+}
+/*メニューバーに表示されているリンク*/
+a.menu{
+	margin-right: 50px;					/*右側に空白を入れる*/
+	margin-top: 30px;					/*上部に空白を入れる*/
+	display: inline-block;				/*インラインブロック要素として扱う*/
+}
+/*テーブル全体*/
+table, td, th {
+	margin: auto;					/*上下左右に空白を自動設定*/
+	border: 1px #808080 solid;		/*ボーダー線を引く*/
+	border-collapse: collapse;		/*ボーダー線を重ねて表示*/
+}
+/*テーブル内のヘッド部分*/
+th{
+	background-color: #ffcc99;		/*背景色の設定*/
+	padding: 10px;					/*上下左右に空白を入れる*/
+}
+/*テーブル内のデータ部分*/
+td{
+	padding: 10px;					/*上下左右に空白を入れる*/
+	text-align: center;				/*テキスト中央寄せ*/
+}
+/*タイトル上のオレンジ色のラインdiv要素*/
+div.top{
+	background-color: #ffcc99;		/*背景色の設定*/
+	width: 100%;					/*画面幅の設定*/
+	height: 50px;					/*高さの設定*/
+}
+/*タイトル上のオレンジ色のラインdiv要素*/
+div.top1{
+	background-color: #ffcc99;		/*背景色の設定*/
+	width: 100%;					/*画面幅の設定*/
+	height: 50px;					/*高さの設定*/
+}
+/*登録・リセットボタンの親div要素*/
+div.button{
+	text-align: center;				/*テキスト中央寄せ*/
+}
+div.button1{
+	text-align: center;				/*テキスト中央寄せ*/
+	margin-top: 20px;
+}
+/*CandidateList.jspで使用*/
+/*通過の場合*/
+td.yes{
+	color: blue;					/*文字色の設定*/
+	font-weight: 700;				/*文字の太さを設定*/
+}
+/*不通過の場合*/
+td.no{
+	color: red;						/*文字色の設定*/
+	font-weight: 700;				/*文字の太さを設定*/
+}
+/*CandidateView.jspで使用*/
+/*PDFファイル表示のiframeタグ*/
+iframe{
+    width:100%;						/*幅の設定*/
+    height:100vh;					/*高さの設定*/
+}
+/*Login.jspで使用*/
+/*formタグ内のdiv要素*/
+form div{
+	text-align: center;				/*テキスト中央寄せ*/
+	margin: 20px;					/*上下左右に空白を入れる*/
+}
+/*○○Update.jspのみで使用*/
+/*一覧に戻るリンク*/
+a#backToList {
+	display: inline-block;			/*margin,top,bottomが効くようになる*/
+	margin: 20px 0;					/*上下に空白をいれる*/
+	margin-left: 700px;				/*左側に空白をいれる*/
+	border: 1px solid transparent	/*見えないボーダーを設定*/
+}
+a#backToListChat{
+	display: inline-block;			/*margin,top,bottomが効くようになる*/
+	margin: 20px 0;					/*上下に空白をいれる*/
+	margin-left: 400px;				/*左側に空白をいれる*/
+	border: 1px solid transparent	/*見えないボーダーを設定*/
+}
+/*CandidateUpdate.jspでのみ使用*/
+/*詳細項目の幅設定*/
+th.candiUpdate{
+	width: 50px;					/*幅の設定*/
+}
+/*Logout.jspのみで使用*/
+/*ログアウトしました（メッセージ）*/
+div.logout{
+	color: blue;					/*文字色の設定*/
+	margin: 0;						/*空白なしに設定*/
+	padding: 0;						/*空白なしに設定*/
+}
+div.loginLink{
+	margin: 0;						/*空白なしに設定*/
+	padding: 0;						/*空白なしに設定*/
+}
+/*Chat.jspのみで使用*/
+/*テーブルの背景*/
+table.chat{
+	background-color: whitesmoke;	/*背景色の設定*/
+}
+td.chat{
+	background-color: whitesmoke;	/*背景色の設定*/
+}
+td.sameId{
+	background-color: #ffe0ff;		/*背景色の設定*/
+}
+table.chatWindow{
+	margin-top: 30px;				/*上部に空白を入れる*/
+}
+
+/* CandidateList.jspテーブルデザイン */
+.candidateList{
+	margin: 15px auto;				/*上下に空白をいれる、左右は自動設定*/
+	max-height: 450px;				/*最大高さの設定*/
+	overflow-y: auto;				/*ｙ軸にスクロール設定*/
+	max-width: 1500px;				/*最大幅の設定*/
+}
+.candidateList table{
+	border-collapse: collapse;		/*線を重ねる設定*/
+	text-align: center;				/*文字を中央寄せ*/
+	table-layout: fixed;			/*テーブルをレイアウトを固定*/
+	width: 100%;					/*幅を親要素の100%に設定*/
+}
+.candidateList thead{
+	position: sticky;				/*位置を固定*/
+	top: 0;							/*上部になにも入れない*/
+	left: 0;						/*左側になにも入れない*/
+}
+.candidateList th{
+	height: 50px;					/*高さの設定*/
+}
+.candidateList th:nth-child(1){
+	width: 20px;					/*幅の設定*/
+}
+.candidateList th:nth-child(3){
+	width: 150px;					/*幅の設定*/
+}
+.candidateList th:nth-child(4){
+	width: 80px;					/*幅の設定*/
+}
+.candidateList th:nth-child(9){
+	width: 130px;					/*幅の設定*/
+}
+.candidateList th:nth-child(11){
+	width: 80px;					/*幅の設定*/
+}
+.candidateList td{
+	height: 40px;					/*高さの設定*/
+}
+/* Chat.jspテーブルデザイン */
+.chatList{
+	margin: 15px auto;				/*上下に空白をいれる、左右は自動設定*/
+	max-height: 400px;				/*最大高さの設定*/
+	overflow-y: auto;				/*ｙ軸にスクロール設定*/
+	max-width: 1100px;				/*最大幅の設定*/
+}
+.chatList table{
+	border-collapse: collapse;		/*線を重ねる設定*/
+	text-align: center;				/*文字を中央寄せ*/
+	table-layout: fixed;			/*テーブルをレイアウトを固定*/
+	width: 100%;					/*幅を親要素の100%に設定*/
+}
+.chatList thead{
+	position: sticky;				/*位置を固定*/
+	top: 0;							/*上部になにも入れない*/
+	left: 0;						/*左側になにも入れない*/
+}
+.chatList th{
+	height: 50px;					/*高さの設定*/
+}
+.chatList th:nth-child(3){
+	width: 75%;						/*幅の設定*/
+}
+.chatList td{
+	height: 40px;					/*高さの設定*/
+}
+/* SectionList.jspテーブルデザイン */
+.sectionList{
+	margin: 15px auto;				/*上下に空白をいれる、左右は自動設定*/
+	max-height: 350px;				/*最大高さの設定*/
+	overflow-y: auto;				/*ｙ軸にスクロール設定*/
+	max-width: 500px;				/*最大幅の設定*/
+}
+.sectionList table{
+	border-collapse: collapse;		/*線を重ねる設定*/
+	text-align: center;				/*文字を中央寄せ*/
+	table-layout: fixed;			/*テーブルをレイアウトを固定*/
+	width: 100%;					/*幅を親要素の100%に設定*/
+}
+.sectionList thead{
+	position: sticky;				/*位置を固定*/
+	top: 0;							/*上部になにも入れない*/
+	left: 0;						/*左側になにも入れない*/
+}
+.sectionList th{
+	height: 50px;					/*高さの設定*/
+}
+.sectionList th:nth-child(2){
+	width: 200px;					/*幅の設定*/
+}
+.sectionList th:nth-child(3){
+	width: 150px;					/*幅の設定*/
+}
+.sectionList td{
+	height: 40px;					/*高さの設定*/
+}
+/* UserList.jspテーブルデザイン */
+.userList{
+	margin: 15px auto;				/*上下に空白をいれる、左右は自動設定*/
+	max-height: 350px;				/*最大高さの設定*/
+	overflow-y: auto;				/*ｙ軸にスクロール設定*/
+	max-width: 600px;				/*最大幅の設定*/
+}
+.userList table{
+	border-collapse: collapse;		/*線を重ねる設定*/
+	text-align: center;				/*文字を中央寄せ*/
+	table-layout: fixed;			/*テーブルをレイアウトを固定*/
+	width: 100%;					/*幅を親要素の100%に設定*/
+}
+.userList thead{
+	position: sticky;				/*位置を固定*/
+	top: 0;							/*上部になにも入れない*/
+	left: 0;						/*左側になにも入れない*/
+}
+.userList th{
+	height: 50px;					/*高さの設定*/
+}
+.userList th:nth-child(1){
+	width: 100px;					/*幅の設定*/
+}
+.userList th:nth-child(2){
+	width: 130px;					/*幅の設定*/
+}
+.userList th:nth-child(3){
+	width: 150px;					/*幅の設定*/
+}
+.userList th:nth-child(4){
+	width: 100px;					/*幅の設定*/
+}
+.userList th:nth-child(5){
+	width: 150px;					/*幅の設定*/
+}
+.userList td{
+	height: 40px;					/*高さの設定*/
+}
+/*ボタンのデザイン*/
+input.button{
+	background-color: #ffcc99;		/*背景色の設定*/
+	border-color: 	#ffbf7f;		/*ボーダーラインの色設定*/
+	color: #4682B4;					/*文字の色を変更*/
+	font-weight: 700;				/*文字の太さを変更*/
+	border-radius: 10px;			/*ボタンの四隅の角をとる*/
+	font-size: large;				/*文字のサイズを変更*/
+	width: 100px;					/*ボタンの幅を設定*/
+	height: 40px;					/*ボタンの高さを設定*/
+	cursor: pointer;				/*ボタンと重なったときのカーソルを変更*/
+	box-shadow: 5px 5px #668AD8;	/*ボタンに影をつける設定*/
+}
+/*CandidateList.jspの検索部分*/
+#search{
+	text-align: center;				/*文字を中央寄せ*/
+	margin-top: 50px;				/*上部に空白を入れる*/
+}
+#search input[type="text"], #search select{
+	margin: 10px 0px;				/*上下に空白を入れる*/
+	padding: 5px;					/*上下左右に空白を入れる*/
+	background: none;				/*背景色の設定*/
+	border: solid 1px #1c4b92;		/*ボーダー線の設定*/
+	border-radius: 5px;				/*ボーダーの角を丸くする*/
+	max-width: 100%;				/*最大幅を親要素の100%に設定*/
+}
+#searchBut{
+	margin: 10px 3px;				/*上下左右に空白を入れる*/
+	padding: 5px 10px;				/*上下左右に空白を入れる*/
+	background: #ffcc99;			/*背景色の設定*/
+	color: black;					/*文字色の設定*/
+	border: solid 1px #1c4b92;		/*ボーダー線の設定*/
+	border-radius: 5px;				/*ボーダーの角を丸くする*/
+	cursor: pointer;				/*カーソルの設定*/
+}
+#searchBut:hover{
+	background: #a6c4f2;			/*背景色の設定*/
+	color: #1c4b92;					/*文字色の設定*/
+	border: solid 1px #a6c4f2;		/*ボーダー線の設定*/
+}
+/*ユーザ登録画面、応募者更新画面の部署名のセレクトバー*/
+select{
+	background: none;				/*背景色の設定*/
+	border: solid 1px #1c4b92;		/*ボーダー線の設定*/
+	max-width: 100%;				/*最大幅を親要素の100%に設定*/
+}
+/*一覧リストの上部コメント*/
+p{
+	text-align: center;				/*テキストを中央寄せ*/
+	color: #884898;					/*文字色の設定*/
+}
+/*応募者一覧画面*/
+/*新しく登録された応募者のNOを赤くする*/
+td.new{
+	color: red;						/*文字の色設定*/
+	font-weight: 700;				/*文字の太さを設定*/
+}
+/*チャットルームのメッセージが自分以外の人で終わってる場合*/
+#lastMessage{
+	font-weight: bold;				/*文字の太さを設定*/
+	text-shadow: 0.3px 0.3px 0; 	/*文字に影をつける設定*/
+	color: magenta;
+}
+/*リンクを無効にした場合の文字色*/
+#nonActive{
+	color: #884898;					/*文字色の設定*/
+}
